@@ -7,10 +7,12 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE">MIT License</a> ·
-  <a href="https://www.python.org/downloads/">Python 3.10+</a> ·
-  <a href="tests">pytest</a> ·
-  Windows / macOS / Linux
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square"></a>
+  <img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-blue.svg?style=flat-square">
+  <a href="CHANGELOG.md"><img alt="Version 0.3.0" src="https://img.shields.io/badge/version-0.3.0-blueviolet.svg?style=flat-square"></a>
+  <a href="tests"><img alt="Tests: 106 passed" src="https://img.shields.io/badge/tests-106%20passed-brightgreen.svg?style=flat-square"></a>
+  <img alt="Platform: Windows / macOS / Linux" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg?style=flat-square">
+  <a href="CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"></a>
 </p>
 
 > Models propose. Deterministic programs compute. Humans approve.
