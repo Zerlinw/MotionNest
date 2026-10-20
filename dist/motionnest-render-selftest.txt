@@ -1,0 +1,2 @@
+[PASS] render selftest: status=video video=C:\Users\dell\AppData\Local\Temp\motionnest-render-rfatoh96\ws\composition\html\motionnest-preview.mp4 size=6025
+逐帧渲染 5 帧 @ 5fps（quality=preview）

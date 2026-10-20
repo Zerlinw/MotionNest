@@ -1,0 +1,532 @@
+{
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "background": "#0B0E14",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "shot_id": "shot-1",
+      "duration_ms": 3000,
+      "layers": [
+        {
+          "id": "layer-01-title",
+          "type": "text",
+          "props": {
+            "text": "XR-500 工业巡检机器人",
+            "size": 68,
+            "x": 120,
+            "y": 400,
+            "width": 860,
+            "align": "left",
+            "color": "#F5F7FA",
+            "caption": false
+          },
+          "animation": {
+            "enter": "slide-up",
+            "duration_ms": 800
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-01-bar",
+          "type": "shape",
+          "props": {
+            "x": 120,
+            "y": 540,
+            "w": 120,
+            "h": 8,
+            "color": "#4A88C7",
+            "radius": 4
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 500
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-01-tagline",
+          "type": "text",
+          "props": {
+            "text": "面向石化厂区的自主巡检设备：多传感器融合避障、夜间红外热成像、云端",
+            "size": 34,
+            "x": 120,
+            "y": 580,
+            "width": 860,
+            "align": "left",
+            "color": "#CDD6E4",
+            "caption": false
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 600
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-01-image",
+          "type": "image",
+          "props": {
+            "src": "pptx-product-deck-image1.png",
+            "x": 1040,
+            "y": 200,
+            "w": 760,
+            "h": 680,
+            "fit": "cover",
+            "radius": 20
+          },
+          "animation": {
+            "enter": "scale",
+            "duration_ms": 800
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-01-brand",
+          "type": "text",
+          "props": {
+            "text": "XR-500 工业巡检机器人",
+            "size": 24,
+            "x": 60,
+            "y": 1020,
+            "width": 600,
+            "align": "left",
+            "color": "#CDD6E4",
+            "caption": false
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 600
+          },
+          "evidence_ids": []
+        }
+      ],
+      "camera": null
+    },
+    {
+      "id": "scene-02",
+      "shot_id": "shot-2",
+      "duration_ms": 5000,
+      "layers": [
+        {
+          "id": "layer-02-bg",
+          "type": "image",
+          "props": {
+            "src": "user-detail.png",
+            "x": 0,
+            "y": 0,
+            "w": 1920,
+            "h": 1080,
+            "fit": "cover",
+            "radius": 0
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 800
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-02-text",
+          "type": "text",
+          "props": {
+            "text": "为采购与运维决策者而生",
+            "size": 56,
+            "x": 0,
+            "y": 760,
+            "width": 1920,
+            "align": "center",
+            "color": "#F5F7FA",
+            "caption": true
+          },
+          "animation": {
+            "enter": "slide-up",
+            "duration_ms": 800
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-02-bar",
+          "type": "shape",
+          "props": {
+            "x": 900,
+            "y": 700,
+            "w": 120,
+            "h": 8,
+            "color": "#4A88C7",
+            "radius": 4
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 500
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-02-brand",
+          "type": "text",
+          "props": {
+            "text": "XR-500 工业巡检机器人",
+            "size": 24,
+            "x": 60,
+            "y": 1020,
+            "width": 600,
+            "align": "left",
+            "color": "#CDD6E4",
+            "caption": false
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 600
+          },
+          "evidence_ids": []
+        }
+      ],
+      "camera": null
+    },
+    {
+      "id": "scene-03",
+      "shot_id": "shot-3",
+      "duration_ms": 5000,
+      "layers": [
+        {
+          "id": "layer-03-bar",
+          "type": "shape",
+          "props": {
+            "x": 140,
+            "y": 460,
+            "w": 10,
+            "h": 160,
+            "color": "#4A88C7",
+            "radius": 5
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 400
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-03-text",
+          "type": "text",
+          "props": {
+            "text": "核心优势",
+            "size": 52,
+            "x": 190,
+            "y": 460,
+            "width": 1000,
+            "align": "left",
+            "color": "#F5F7FA",
+            "caption": false
+          },
+          "animation": {
+            "enter": "slide-up",
+            "duration_ms": 800
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-03-image",
+          "type": "image",
+          "props": {
+            "src": "user-hero.png",
+            "x": 1250,
+            "y": 300,
+            "w": 560,
+            "h": 480,
+            "fit": "cover",
+            "radius": 20
+          },
+          "animation": {
+            "enter": "scale",
+            "duration_ms": 800
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-03-brand",
+          "type": "text",
+          "props": {
+            "text": "XR-500 工业巡检机器人",
+            "size": 24,
+            "x": 60,
+            "y": 1020,
+            "width": 600,
+            "align": "left",
+            "color": "#CDD6E4",
+            "caption": false
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 600
+          },
+          "evidence_ids": []
+        }
+      ],
+      "camera": null
+    },
+    {
+      "id": "scene-04",
+      "shot_id": "shot-4",
+      "duration_ms": 5000,
+      "layers": [
+        {
+          "id": "layer-04-bar",
+          "type": "shape",
+          "props": {
+            "x": 140,
+            "y": 460,
+            "w": 10,
+            "h": 160,
+            "color": "#4A88C7",
+            "radius": 5
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 400
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-04-text",
+          "type": "text",
+          "props": {
+            "text": "客户价值",
+            "size": 52,
+            "x": 190,
+            "y": 460,
+            "width": 1000,
+            "align": "left",
+            "color": "#F5F7FA",
+            "caption": false
+          },
+          "animation": {
+            "enter": "slide-up",
+            "duration_ms": 800
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-04-brand",
+          "type": "text",
+          "props": {
+            "text": "XR-500 工业巡检机器人",
+            "size": 24,
+            "x": 60,
+            "y": 1020,
+            "width": 600,
+            "align": "left",
+            "color": "#CDD6E4",
+            "caption": false
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 600
+          },
+          "evidence_ids": []
+        }
+      ],
+      "camera": null
+    },
+    {
+      "id": "scene-05",
+      "shot_id": "shot-5",
+      "duration_ms": 5000,
+      "layers": [
+        {
+          "id": "layer-05-bar",
+          "type": "shape",
+          "props": {
+            "x": 140,
+            "y": 460,
+            "w": 10,
+            "h": 160,
+            "color": "#4A88C7",
+            "radius": 5
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 400
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-05-text",
+          "type": "text",
+          "props": {
+            "text": "服务承诺",
+            "size": 52,
+            "x": 190,
+            "y": 460,
+            "width": 1000,
+            "align": "left",
+            "color": "#F5F7FA",
+            "caption": false
+          },
+          "animation": {
+            "enter": "slide-up",
+            "duration_ms": 800
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-05-brand",
+          "type": "text",
+          "props": {
+            "text": "XR-500 工业巡检机器人",
+            "size": 24,
+            "x": 60,
+            "y": 1020,
+            "width": 600,
+            "align": "left",
+            "color": "#CDD6E4",
+            "caption": false
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 600
+          },
+          "evidence_ids": []
+        }
+      ],
+      "camera": null
+    },
+    {
+      "id": "scene-06",
+      "shot_id": "shot-6",
+      "duration_ms": 4000,
+      "layers": [
+        {
+          "id": "layer-06-chart",
+          "type": "chart",
+          "props": {
+            "chart_type": "bar",
+            "series": [
+              {
+                "name": "XR-500",
+                "value": 12.0
+              },
+              {
+                "name": "XR-500 Pro",
+                "value": 18.0
+              },
+              {
+                "name": "XR-500 Lite",
+                "value": 8.0
+              }
+            ],
+            "title": "续航小时 8 ~ 18（specs.csv） · 覆盖距离公里 3 ~ 8（sp"
+          },
+          "animation": {
+            "enter": "draw",
+            "duration_ms": 800
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-06-brand",
+          "type": "text",
+          "props": {
+            "text": "XR-500 工业巡检机器人",
+            "size": 24,
+            "x": 60,
+            "y": 1020,
+            "width": 600,
+            "align": "left",
+            "color": "#CDD6E4",
+            "caption": false
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 600
+          },
+          "evidence_ids": []
+        }
+      ],
+      "camera": null
+    },
+    {
+      "id": "scene-07",
+      "shot_id": "shot-7",
+      "duration_ms": 3000,
+      "layers": [
+        {
+          "id": "layer-07-cta",
+          "type": "text",
+          "props": {
+            "text": "欢迎联系获取详细方案",
+            "size": 64,
+            "x": 0,
+            "y": 420,
+            "width": 1920,
+            "align": "center",
+            "color": "#4A88C7",
+            "caption": false
+          },
+          "animation": {
+            "enter": "scale",
+            "duration_ms": 800
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-07-bar",
+          "type": "shape",
+          "props": {
+            "x": 900,
+            "y": 560,
+            "w": 120,
+            "h": 8,
+            "color": "#4A88C7",
+            "radius": 4
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 500
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-07-product",
+          "type": "text",
+          "props": {
+            "text": "XR-500 工业巡检机器人",
+            "size": 36,
+            "x": 0,
+            "y": 600,
+            "width": 1920,
+            "align": "center",
+            "color": "#CDD6E4",
+            "caption": false
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 600
+          },
+          "evidence_ids": []
+        },
+        {
+          "id": "layer-07-brand",
+          "type": "text",
+          "props": {
+            "text": "XR-500 工业巡检机器人",
+            "size": 24,
+            "x": 60,
+            "y": 1020,
+            "width": 600,
+            "align": "left",
+            "color": "#CDD6E4",
+            "caption": false
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 600
+          },
+          "evidence_ids": []
+        }
+      ],
+      "camera": null
+    }
+  ]
+}

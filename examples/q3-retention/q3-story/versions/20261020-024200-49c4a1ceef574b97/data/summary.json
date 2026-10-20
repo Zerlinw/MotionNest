@@ -1,0 +1,71 @@
+{
+  "rows": 8,
+  "columns": [
+    {
+      "name": "month",
+      "dtype": "date",
+      "nulls": 0,
+      "unique": 8,
+      "min": null,
+      "max": null,
+      "sample": [
+        "2026-01",
+        "2026-02",
+        "2026-03"
+      ]
+    },
+    {
+      "name": "new_users",
+      "dtype": "number",
+      "nulls": 0,
+      "unique": 8,
+      "min": 1180.0,
+      "max": 1890.0,
+      "sample": [
+        "1200",
+        "1350",
+        "1180"
+      ]
+    },
+    {
+      "name": "activated_users",
+      "dtype": "number",
+      "nulls": 0,
+      "unique": 8,
+      "min": 760.0,
+      "max": 1455.0,
+      "sample": [
+        "780",
+        "910",
+        "760"
+      ]
+    },
+    {
+      "name": "retained_d30",
+      "dtype": "number",
+      "nulls": 0,
+      "unique": 8,
+      "min": 398.0,
+      "max": 948.0,
+      "sample": [
+        "402",
+        "480",
+        "398"
+      ]
+    },
+    {
+      "name": "revenue_cny",
+      "dtype": "number",
+      "nulls": 0,
+      "unique": 8,
+      "min": 174000.0,
+      "max": 402000.0,
+      "sample": [
+        "186000",
+        "212000",
+        "174000"
+      ]
+    }
+  ],
+  "date_range": "2026-01 ~ 2026-08"
+}

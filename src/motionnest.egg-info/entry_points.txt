@@ -1,0 +1,2 @@
+[console_scripts]
+mnest = motionnest.cli:app

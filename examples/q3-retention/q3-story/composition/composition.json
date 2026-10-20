@@ -1,0 +1,202 @@
+{
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "scene-01",
+      "shot_id": "shot-1",
+      "duration_ms": 2500,
+      "layers": [
+        {
+          "id": "layer-01-chart",
+          "type": "text",
+          "props": {
+            "chart_type": "bar",
+            "series": [],
+            "title": "new_users 的结构分布",
+            "highlight": []
+          },
+          "animation": {
+            "enter": "draw",
+            "duration_ms": 800
+          },
+          "evidence_ids": [
+            "metric:new_users",
+            "metric:activated_users",
+            "metric:retained_d30"
+          ]
+        }
+      ],
+      "camera": null
+    },
+    {
+      "id": "scene-02",
+      "shot_id": "shot-2",
+      "duration_ms": 6333,
+      "layers": [
+        {
+          "id": "layer-02-chart",
+          "type": "chart",
+          "props": {
+            "chart_type": "bar",
+            "series": [
+              {
+                "name": "new_users 的结构分布",
+                "value": 0
+              }
+            ],
+            "title": "1180 ~ 1890",
+            "highlight": []
+          },
+          "animation": {
+            "enter": "draw",
+            "duration_ms": 800
+          },
+          "evidence_ids": [
+            "metric:new_users",
+            "metric:activated_users",
+            "metric:retained_d30"
+          ]
+        },
+        {
+          "id": "layer-02-caption",
+          "type": "text",
+          "props": {
+            "text": "1180 ~ 1890",
+            "size": 36,
+            "x": 80,
+            "y": 120
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 400
+          },
+          "evidence_ids": []
+        }
+      ],
+      "camera": null
+    },
+    {
+      "id": "scene-03",
+      "shot_id": "shot-3",
+      "duration_ms": 6333,
+      "layers": [
+        {
+          "id": "layer-03-chart",
+          "type": "chart",
+          "props": {
+            "chart_type": "bar",
+            "series": [
+              {
+                "name": "new_users 的结构分布",
+                "value": 0
+              }
+            ],
+            "title": "760 ~ 1455",
+            "highlight": []
+          },
+          "animation": {
+            "enter": "draw",
+            "duration_ms": 800
+          },
+          "evidence_ids": [
+            "metric:new_users",
+            "metric:activated_users",
+            "metric:retained_d30"
+          ]
+        },
+        {
+          "id": "layer-03-caption",
+          "type": "text",
+          "props": {
+            "text": "760 ~ 1455",
+            "size": 36,
+            "x": 80,
+            "y": 120
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 400
+          },
+          "evidence_ids": []
+        }
+      ],
+      "camera": null
+    },
+    {
+      "id": "scene-04",
+      "shot_id": "shot-4",
+      "duration_ms": 6333,
+      "layers": [
+        {
+          "id": "layer-04-chart",
+          "type": "chart",
+          "props": {
+            "chart_type": "bar",
+            "series": [
+              {
+                "name": "new_users 的结构分布",
+                "value": 0
+              }
+            ],
+            "title": "398 ~ 948",
+            "highlight": []
+          },
+          "animation": {
+            "enter": "draw",
+            "duration_ms": 800
+          },
+          "evidence_ids": [
+            "metric:new_users",
+            "metric:activated_users",
+            "metric:retained_d30"
+          ]
+        },
+        {
+          "id": "layer-04-caption",
+          "type": "text",
+          "props": {
+            "text": "398 ~ 948",
+            "size": 36,
+            "x": 80,
+            "y": 120
+          },
+          "animation": {
+            "enter": "fade",
+            "duration_ms": 400
+          },
+          "evidence_ids": []
+        }
+      ],
+      "camera": null
+    },
+    {
+      "id": "scene-05",
+      "shot_id": "shot-5",
+      "duration_ms": 2500,
+      "layers": [
+        {
+          "id": "layer-05-chart",
+          "type": "text",
+          "props": {
+            "chart_type": "bar",
+            "series": [],
+            "title": "数据来源见引用页",
+            "highlight": []
+          },
+          "animation": {
+            "enter": "draw",
+            "duration_ms": 800
+          },
+          "evidence_ids": [
+            "metric:new_users",
+            "metric:activated_users",
+            "metric:retained_d30"
+          ]
+        }
+      ],
+      "camera": null
+    }
+  ]
+}

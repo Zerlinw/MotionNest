@@ -1,0 +1,20 @@
+# 模板：趋势叙事（trend）
+# 用法：mnest new my-film --template trend
+# 作用：为 plan/brief.json 提供初始创作约束；模板只改约束，不改数字。
+
+template: trend
+brief:
+  goal: 讲清一个指标随时间的变化及其驱动
+  audience: 管理层与业务方
+  platform: "16:9"
+  target_duration_ms: 30000
+  tone: 克制、专业
+  music:
+    tempo_bpm_hint: 96
+    max_energy: 0.6
+defaults:
+  chart_type: line
+  enter_animation: draw
+notes: >-
+  趋势模板强调"变化"而非"快照"：分镜以时间轴为主线，
+  每镜头只讲一个变化点，拐点必须能回到数据行。

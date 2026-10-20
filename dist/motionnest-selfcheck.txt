@@ -1,0 +1,8 @@
+[PASS] 设置加载：D:\Develop\PythonProject\MotionNest\dist\motionnest-settings.json
+[PASS] 主窗口构建：2 个页面
+[PASS] 主题 darcula：8246 字符 QSS
+[PASS] 主题 light：8253 字符 QSS
+[PASS] 对话模型：deepseek-chat（未配置：模板降级）
+[PASS] 生图模型：未配置（素材 + 图形兜底）
+[PASS] promo 管线导入：motionnest.promo
+selfcheck: 7/7 通过

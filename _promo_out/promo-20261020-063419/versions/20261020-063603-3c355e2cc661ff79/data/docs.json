@@ -1,0 +1,113 @@
+{
+  "title": "XR-500 工业巡检机器人",
+  "sections": [
+    {
+      "kind": "heading",
+      "text": "XR-500 工业巡检机器人"
+    },
+    {
+      "kind": "paragraph",
+      "text": "面向石化厂区的自主巡检设备：多传感器融合避障、夜间红外热成像、云端报表自动生成。\n已服务 30+ 行业客户，覆盖管廊、罐区、装卸台等复杂场景。"
+    },
+    {
+      "kind": "heading",
+      "text": "核心优势"
+    },
+    {
+      "kind": "list",
+      "text": "多传感器融合避障，巡检路径自主规划，无需人工示教\n夜间红外热成像，异常温升实时告警\n单次充电续航 12 小时，覆盖 5 公里管廊\nIP66 防护等级，耐酸碱外壳，适应户外严苛环境\n云端报表自动生成，运维数据可追溯"
+    },
+    {
+      "kind": "heading",
+      "text": "客户价值"
+    },
+    {
+      "kind": "list",
+      "text": "人工巡检频次下降 70%，高危区域零暴露\n异常发现从\"按班\"提升到\"实时\"\n报表自动生成，运维合规审计有据可查"
+    },
+    {
+      "kind": "heading",
+      "text": "服务承诺"
+    },
+    {
+      "kind": "paragraph",
+      "text": "整机质保 2 年，4 小时响应，备件 48 小时到场。"
+    },
+    {
+      "kind": "paragraph",
+      "text": "数据表 specs.csv：3 行 × 5 列"
+    },
+    {
+      "kind": "paragraph",
+      "text": "[product-deck.pptx] XR-500 工业巡检机器人 · 产品介绍 / 面向石化厂区的自主巡检设备 / IP66 防护 · 耐酸碱外壳 / 已服务 30+ 行业客户"
+    },
+    {
+      "kind": "paragraph",
+      "text": "[product-deck.pptx] 核心能力 / 多传感器融合避障，巡检路径自主规划 / 夜间红外热成像，异常温升实时告警 / 云端报表自动生成，运维数据可追溯"
+    },
+    {
+      "kind": "paragraph",
+      "text": "[product-deck.pptx] 关键参数 / 续航 12 小时（Pro 版 18 小时） / 防护等级 IP66（Pro 版 IP67） / 单机覆盖 5 公里管廊"
+    }
+  ],
+  "images": [
+    {
+      "name": "pptx-product-deck-image1.png",
+      "source": "product-deck.pptx",
+      "caption": ""
+    },
+    {
+      "name": "user-detail.png",
+      "source": "asset-folder",
+      "caption": ""
+    },
+    {
+      "name": "user-hero.png",
+      "source": "asset-folder",
+      "caption": ""
+    }
+  ],
+  "tables": [
+    {
+      "source": "specs.csv",
+      "columns": [
+        "型号",
+        "续航小时",
+        "防护等级",
+        "覆盖距离公里",
+        "客户数"
+      ],
+      "rows": 3,
+      "summary": "3 行 × 5 列\n型号: XR-500\n续航小时: 8 ~ 18\n防护等级: IP66\n覆盖距离公里: 3 ~ 8\n客户数: 12 ~ 45",
+      "sample_records": [
+        {
+          "型号": "XR-500",
+          "续航小时": "12",
+          "防护等级": "IP66",
+          "覆盖距离公里": "5",
+          "客户数": "30"
+        },
+        {
+          "型号": "XR-500 Pro",
+          "续航小时": "18",
+          "防护等级": "IP67",
+          "覆盖距离公里": "8",
+          "客户数": "12"
+        },
+        {
+          "型号": "XR-500 Lite",
+          "续航小时": "8",
+          "防护等级": "IP65",
+          "覆盖距离公里": "3",
+          "客户数": "45"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "product.md",
+    "specs.csv",
+    "product-deck.pptx"
+  ],
+  "degraded": []
+}

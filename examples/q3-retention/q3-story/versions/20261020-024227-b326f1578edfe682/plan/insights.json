@@ -1,0 +1,82 @@
+{
+  "summary": "离线模板：8 行 × 5 列，数值列 4 个",
+  "metrics": [
+    {
+      "name": "new_users",
+      "display_value": "1180 ~ 1890",
+      "delta": null,
+      "evidence_id": "metric:new_users",
+      "risk": null
+    },
+    {
+      "name": "activated_users",
+      "display_value": "760 ~ 1455",
+      "delta": null,
+      "evidence_id": "metric:activated_users",
+      "risk": null
+    },
+    {
+      "name": "retained_d30",
+      "display_value": "398 ~ 948",
+      "delta": null,
+      "evidence_id": "metric:retained_d30",
+      "risk": null
+    },
+    {
+      "name": "revenue_cny",
+      "display_value": "174000 ~ 402000",
+      "delta": null,
+      "evidence_id": "metric:revenue_cny",
+      "risk": null
+    }
+  ],
+  "candidates": [
+    {
+      "id": "cand-1",
+      "title": "new_users 的结构分布",
+      "thesis": "以 new_users 为主线展示数据结构",
+      "audience": "general",
+      "key_numbers": [
+        "1180 ~ 1890",
+        "760 ~ 1455",
+        "398 ~ 948"
+      ],
+      "evidence_ids": [
+        "metric:new_users",
+        "metric:activated_users",
+        "metric:retained_d30"
+      ],
+      "ignored_info": [
+        "未展开的维度与细分切片"
+      ],
+      "risks": [
+        "模板产出，需人工确认叙事"
+      ]
+    },
+    {
+      "id": "cand-2",
+      "title": "new_users 的变化趋势",
+      "thesis": "以 new_users 的变化为主线展示趋势",
+      "audience": "general",
+      "key_numbers": [
+        "1180 ~ 1890",
+        "760 ~ 1455",
+        "398 ~ 948"
+      ],
+      "evidence_ids": [
+        "metric:new_users",
+        "metric:activated_users",
+        "metric:retained_d30"
+      ],
+      "ignored_info": [
+        "结构性归因与外部因素"
+      ],
+      "risks": [
+        "模板产出，需人工确认叙事"
+      ]
+    }
+  ],
+  "data_quality_notes": [
+    "该洞察由确定性模板生成，未经模型解读"
+  ]
+}

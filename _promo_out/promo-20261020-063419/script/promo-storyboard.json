@@ -1,0 +1,89 @@
+{
+  "title": "XR-500 工业巡检机器人 · 30 秒宣传片",
+  "total_duration_ms": 30000,
+  "shots": [
+    {
+      "id": "shot-1",
+      "beat": "hook",
+      "duration_ms": 3000,
+      "on_screen_text": "XR-500 工业巡检机器人\n面向石化厂区的自主巡检设备：多传感器融合避障、夜间红外热成像、云端",
+      "narration": "",
+      "visual": {
+        "kind": "image",
+        "keywords": "XR-500 工业巡检机器人"
+      },
+      "copy_source": "template"
+    },
+    {
+      "id": "shot-2",
+      "beat": "reveal",
+      "duration_ms": 5000,
+      "on_screen_text": "为采购与运维决策者而生",
+      "narration": "",
+      "visual": {
+        "kind": "image",
+        "keywords": "XR-500 工业巡检机器人"
+      },
+      "copy_source": "template"
+    },
+    {
+      "id": "shot-3",
+      "beat": "selling_point",
+      "duration_ms": 5000,
+      "on_screen_text": "核心优势",
+      "narration": "",
+      "visual": {
+        "kind": "image",
+        "keywords": "核心优势"
+      },
+      "copy_source": "template"
+    },
+    {
+      "id": "shot-4",
+      "beat": "selling_point",
+      "duration_ms": 5000,
+      "on_screen_text": "客户价值",
+      "narration": "",
+      "visual": {
+        "kind": "image",
+        "keywords": "客户价值"
+      },
+      "copy_source": "template"
+    },
+    {
+      "id": "shot-5",
+      "beat": "selling_point",
+      "duration_ms": 5000,
+      "on_screen_text": "服务承诺",
+      "narration": "",
+      "visual": {
+        "kind": "image",
+        "keywords": "服务承诺"
+      },
+      "copy_source": "template"
+    },
+    {
+      "id": "shot-6",
+      "beat": "proof",
+      "duration_ms": 4000,
+      "on_screen_text": "续航小时 8 ~ 18（specs.csv） · 覆盖距离公里 3 ~ 8（specs.csv）",
+      "narration": "",
+      "visual": {
+        "kind": "chart",
+        "table": "specs.csv"
+      },
+      "copy_source": "template"
+    },
+    {
+      "id": "shot-7",
+      "beat": "cta",
+      "duration_ms": 3000,
+      "on_screen_text": "欢迎联系获取详细方案\nXR-500 工业巡检机器人",
+      "narration": "",
+      "visual": {
+        "kind": "text"
+      },
+      "copy_source": "template"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "product_name": "XR-500 工业巡检机器人",
+  "tagline": "面向石化厂区的自主巡检设备：多传感器融合避障、夜间红外热成像、云端报表自动生成。",
+  "audience": "采购与运维决策者",
+  "selling_points": [
+    "核心优势",
+    "客户价值",
+    "服务承诺"
+  ],
+  "proof_numbers": [
+    "续航小时 8 ~ 18（specs.csv）",
+    "覆盖距离公里 3 ~ 8（specs.csv）",
+    "客户数 12 ~ 45（specs.csv）"
+  ],
+  "cta": "欢迎联系获取详细方案",
+  "tone": "专业、克制",
+  "palette": [],
+  "source": "template"
+}

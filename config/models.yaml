@@ -1,0 +1,61 @@
+# ============================================================
+# MotionNest 模型注册表（config/models.yaml）
+# ------------------------------------------------------------
+# 每个模型声明六个要素：
+#   name            逻辑名（业务代码与路由规则只认这个名字）
+#   model_id        提供方侧的真实模型 ID
+#   provider_format 接口格式：openai | anthropic
+#   base_url        API 端点（openai 追加 /chat/completions；
+#                   anthropic 追加 /v1/messages）
+#   api_key_env     密钥所在的环境变量名
+#   tier            档位：low（低成本）| strong（强模型）
+#
+# 新增模型 = 在下方追加一段声明，无需改动任何业务代码。
+# ============================================================
+
+models:
+  # ---------- 低成本档（默认）：数据解读 / 分镜脚本 / 初稿动画 / 动画改稿 ----------
+  - name: deepseek-flash
+    model_id: deepseek-flash            # DeepSeek V4.1 Flash
+    provider_format: openai             # OpenAI 兼容端点
+    base_url: https://api.deepseek.com
+    api_key_env: DEEPSEEK_API_KEY
+    tier: low
+    description: DeepSeek V4.1 Flash —— 低成本档默认模型，承担高频结构化任务
+    max_output_tokens: 8192
+
+  # ---------- 强模型档：配乐审美 / 复杂三维运镜 / 最终成片校对 ----------
+  - name: deepseek-v4-pro
+    model_id: deepseek-v4-pro           # DeepSeek V4 Pro
+    provider_format: openai
+    base_url: https://api.deepseek.com
+    api_key_env: DEEPSEEK_API_KEY
+    tier: strong
+    description: DeepSeek V4 Pro —— 强模型档默认模型，承担高难度审美与推理任务
+    max_output_tokens: 8192
+
+  # ---------- 可选接入示例：取消注释并配置密钥即可生效 ----------
+  # 同一提供方、Anthropic 接口格式（验证"双格式兼容"用）：
+  # - name: deepseek-flash-anthropic
+  #   model_id: deepseek-flash
+  #   provider_format: anthropic
+  #   base_url: https://api.deepseek.com/anthropic
+  #   api_key_env: DEEPSEEK_API_KEY
+  #   tier: low
+  #   description: 同一个 deepseek-flash，经 Anthropic 兼容端点访问
+
+  # OpenAI（强模型档备选）：
+  # - name: gpt-4.1
+  #   model_id: gpt-4.1
+  #   provider_format: openai
+  #   base_url: https://api.openai.com/v1
+  #   api_key_env: OPENAI_API_KEY
+  #   tier: strong
+
+  # Anthropic（强模型档备选）：
+  # - name: claude-sonnet
+  #   model_id: claude-sonnet-4-5
+  #   provider_format: anthropic
+  #   base_url: https://api.anthropic.com
+  #   api_key_env: ANTHROPIC_API_KEY
+  #   tier: strong

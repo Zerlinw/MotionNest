@@ -1,0 +1,108 @@
+{
+  "title": "new_users 的结构分布",
+  "total_duration_ms": 23999,
+  "shots": [
+    {
+      "id": "shot-1",
+      "start_ms": 0,
+      "duration_ms": 2500,
+      "scene_type": "title",
+      "assertion": "以 new_users 为主线展示数据结构",
+      "evidence_ids": [
+        "metric:new_users",
+        "metric:activated_users",
+        "metric:retained_d30"
+      ],
+      "visual": {},
+      "narration": null,
+      "on_screen_text": "new_users 的结构分布"
+    },
+    {
+      "id": "shot-2",
+      "start_ms": 2500,
+      "duration_ms": 6333,
+      "scene_type": "chart",
+      "assertion": "关键数字：1180 ~ 1890",
+      "evidence_ids": [
+        "metric:new_users",
+        "metric:activated_users",
+        "metric:retained_d30"
+      ],
+      "visual": {
+        "chart_type": "bar",
+        "series": [
+          {
+            "name": "new_users 的结构分布",
+            "value": 0
+          }
+        ],
+        "highlight": []
+      },
+      "narration": "如图，1180 ~ 1890。",
+      "on_screen_text": "1180 ~ 1890"
+    },
+    {
+      "id": "shot-3",
+      "start_ms": 8833,
+      "duration_ms": 6333,
+      "scene_type": "chart",
+      "assertion": "关键数字：760 ~ 1455",
+      "evidence_ids": [
+        "metric:new_users",
+        "metric:activated_users",
+        "metric:retained_d30"
+      ],
+      "visual": {
+        "chart_type": "bar",
+        "series": [
+          {
+            "name": "new_users 的结构分布",
+            "value": 0
+          }
+        ],
+        "highlight": []
+      },
+      "narration": "如图，760 ~ 1455。",
+      "on_screen_text": "760 ~ 1455"
+    },
+    {
+      "id": "shot-4",
+      "start_ms": 15166,
+      "duration_ms": 6333,
+      "scene_type": "chart",
+      "assertion": "关键数字：398 ~ 948",
+      "evidence_ids": [
+        "metric:new_users",
+        "metric:activated_users",
+        "metric:retained_d30"
+      ],
+      "visual": {
+        "chart_type": "bar",
+        "series": [
+          {
+            "name": "new_users 的结构分布",
+            "value": 0
+          }
+        ],
+        "highlight": []
+      },
+      "narration": "如图，398 ~ 948。",
+      "on_screen_text": "398 ~ 948"
+    },
+    {
+      "id": "shot-5",
+      "start_ms": 21499,
+      "duration_ms": 2500,
+      "scene_type": "outro",
+      "assertion": "以 new_users 为主线展示数据结构",
+      "evidence_ids": [
+        "metric:new_users",
+        "metric:activated_users",
+        "metric:retained_d30"
+      ],
+      "visual": {},
+      "narration": null,
+      "on_screen_text": "数据来源见引用页"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-10-20T06:36:02.898456+00:00",
+  "project": "promo-20261020-063419",
+  "output": "_promo_out\\promo-20261020-063419\\exports\\promo.mp4",
+  "duration_ms": 30000,
+  "duration_s": 30.0,
+  "frames": 150,
+  "fps": 5,
+  "quality": "preview",
+  "resolution": "1920x1080",
+  "sources": [
+    "product.md",
+    "specs.csv",
+    "product-deck.pptx"
+  ],
+  "assets": {
+    "shot-1": "asset:pptx-product-deck-image1.png",
+    "shot-2": "asset:user-detail.png",
+    "shot-3": "asset:user-hero.png",
+    "shot-4": "svg-fallback",
+    "shot-5": "svg-fallback",
+    "shot-6": "svg-fallback",
+    "shot-7": "svg-fallback"
+  },
+  "brief_source": "template",
+  "copy_sources": [
+    "template"
+  ],
+  "degraded": [
+    "未配置对话模型，使用模板降级"
+  ],
+  "chat_model": "",
+  "image_model": ""
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>scene-02</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0b0e14; overflow: hidden; }
+  #stage { position: relative; width: 1920px; height: 1080px; overflow: hidden;
+           font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif; }
+  .mn-layer { position: absolute; will-change: transform, opacity; }
+  .mn-text { color: #f5f7fa; font-weight: 600; text-shadow: 0 2px 12px rgba(0,0,0,.45); }
+  .mn-caption { background: rgba(11,14,20,.55); padding: .4em .8em; border-radius: .3em; }
+  @keyframes mn-fade { from { opacity: 0 } to { opacity: 1 } }
+  @keyframes mn-slide-up { from { opacity: 0; transform: translateY(60px) } to { opacity: 1; transform: none } }
+  @keyframes mn-slide-down { from { opacity: 0; transform: translateY(-60px) } to { opacity: 1; transform: none } }
+  @keyframes mn-scale { from { opacity: 0; transform: scale(.8) } to { opacity: 1; transform: none } }
+  @keyframes mn-draw { from { clip-path: inset(0 100% 0 0) } to { clip-path: inset(0 0 0 0) } }
+  @keyframes mn-count-up { from { opacity: 0; transform: translateY(24px) } to { opacity: 1; transform: none } }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+const SCENE = {"id": "scene-02", "shot_id": "shot-2", "duration_ms": 6333, "layers": [{"id": "layer-02-chart", "type": "chart", "props": {"chart_type": "bar", "series": [{"name": "new_users 的结构分布", "value": 0}], "title": "1180 ~ 1890", "highlight": []}, "animation": {"enter": "draw", "duration_ms": 800}, "evidence_ids": ["metric:new_users", "metric:activated_users", "metric:retained_d30"]}, {"id": "layer-02-caption", "type": "text", "props": {"text": "1180 ~ 1890", "size": 36, "x": 80, "y": 120}, "animation": {"enter": "fade", "duration_ms": 400}, "evidence_ids": []}], "camera": null};
+const COMP = {"fps": 30, "width": 1920, "height": 1080, "scenes": [{"id": "scene-01", "shot_id": "shot-1", "duration_ms": 2500, "layers": [{"id": "layer-01-chart", "type": "text", "props": {"chart_type": "bar", "series": [], "title": "new_users 的结构分布", "highlight": []}, "animation": {"enter": "draw", "duration_ms": 800}, "evidence_ids": ["metric:new_users", "metric:activated_users", "metric:retained_d30"]}], "camera": null}, {"id": "scene-02", "shot_id": "shot-2", "duration_ms": 6333, "layers": [{"id": "layer-02-chart", "type": "chart", "props": {"chart_type": "bar", "series": [{"name": "new_users 的结构分布", "value": 0}], "title": "1180 ~ 1890", "highlight": []}, "animation": {"enter": "draw", "duration_ms": 800}, "evidence_ids": ["metric:new_users", "metric:activated_users", "metric:retained_d30"]}, {"id": "layer-02-caption", "type": "text", "props": {"text": "1180 ~ 1890", "size": 36, "x": 80, "y": 120}, "animation": {"enter": "fade", "duration_ms": 400}, "evidence_ids": []}], "camera": null}, {"id": "scene-03", "shot_id": "shot-3", "duration_ms": 6333, "layers": [{"id": "layer-03-chart", "type": "chart", "props": {"chart_type": "bar", "series": [{"name": "new_users 的结构分布", "value": 0}], "title": "760 ~ 1455", "highlight": []}, "animation": {"enter": "draw", "duration_ms": 800}, "evidence_ids": ["metric:new_users", "metric:activated_users", "metric:retained_d30"]}, {"id": "layer-03-caption", "type": "text", "props": {"text": "760 ~ 1455", "size": 36, "x": 80, "y": 120}, "animation": {"enter": "fade", "duration_ms": 400}, "evidence_ids": []}], "camera": null}, {"id": "scene-04", "shot_id": "shot-4", "duration_ms": 6333, "layers": [{"id": "layer-04-chart", "type": "chart", "props": {"chart_type": "bar", "series": [{"name": "new_users 的结构分布", "value": 0}], "title": "398 ~ 948", "highlight": []}, "animation": {"enter": "draw", "duration_ms": 800}, "evidence_ids": ["metric:new_users", "metric:activated_users", "metric:retained_d30"]}, {"id": "layer-04-caption", "type": "text", "props": {"text": "398 ~ 948", "size": 36, "x": 80, "y": 120}, "animation": {"enter": "fade", "duration_ms": 400}, "evidence_ids": []}], "camera": null}, {"id": "scene-05", "shot_id": "shot-5", "duration_ms": 2500, "layers": [{"id": "layer-05-chart", "type": "text", "props": {"chart_type": "bar", "series": [], "title": "数据来源见引用页", "highlight": []}, "animation": {"enter": "draw", "duration_ms": 800}, "evidence_ids": ["metric:new_users", "metric:activated_users", "metric:retained_d30"]}], "camera": null}]};
+const PALETTE = ["#4f8ef7", "#f7724f", "#38c6a4", "#b478f0", "#f7c948"];
+function chartSVG(p) {
+  const series = (p.series || []).map(s => ({ name: String(s.name), value: Number(s.value) || 0 }));
+  if (!series.length) return '<svg width="100%" height="100%"></svg>';
+  const W = COMP.width, H = COMP.height, pad = 120;
+  const max = Math.max(...series.map(s => Math.abs(s.value)), 1);
+  const bw = (W - pad * 2) / series.length;
+  let bars = "";
+  series.forEach((s, i) => {
+    const h = (Math.abs(s.value) / max) * (H - pad * 2);
+    const x = pad + i * bw + bw * 0.15, y = H - pad - h;
+    bars += `<rect x="${x}" y="${y}" width="${bw * 0.7}" height="${h}" rx="8" fill="${PALETTE[i % PALETTE.length]}"/>`;
+    bars += `<text x="${x + bw * 0.35}" y="${H - pad + 36}" fill="#cdd6e4" font-size="26" text-anchor="middle">${s.name}</text>`;
+    bars += `<text x="${x + bw * 0.35}" y="${y - 14}" fill="#f5f7fa" font-size="28" text-anchor="middle">${s.value}</text>`;
+  });
+  return `<svg width="${W}" height="${H}">${bars}</svg>`;
+}
+function applyAnimation(el, anim) {
+  const type = (anim && anim.enter) || "fade";
+  const dur = (anim && anim.duration_ms) || 600;
+  const name = { fade: "mn-fade", "slide-up": "mn-slide-up", "slide-down": "mn-slide-down",
+                 scale: "mn-scale", draw: "mn-draw", "count-up": "mn-count-up" }[type] || "mn-fade";
+  el.style.animation = `${name} ${dur}ms cubic-bezier(.22,.61,.36,1) both`;
+}
+function renderScene(stage, scene) {
+  stage.innerHTML = "";
+  (scene.layers || []).forEach(layer => {
+    const el = document.createElement("div");
+    el.className = "mn-layer";
+    el.id = layer.id;
+    el.dataset.mnId = layer.id;
+    const p = layer.props || {};
+    if (layer.type === "chart") {
+      el.innerHTML = chartSVG(p);
+      el.style.inset = "0";
+    } else if (layer.type === "text") {
+      el.classList.add("mn-text");
+      if (p.caption !== false) el.classList.add("mn-caption");
+      el.textContent = p.text || "";
+      el.style.left = (p.x || 0) + "px";
+      el.style.top = (p.y || 0) + "px";
+      el.style.fontSize = (p.size || 36) + "px";
+    } else {
+      el.style.left = (p.x || 0) + "px";
+      el.style.top = (p.y || 0) + "px";
+      el.style.width = (p.w || 200) + "px";
+      el.style.height = (p.h || 200) + "px";
+      el.style.background = p.color || "#4f8ef7";
+      el.style.borderRadius = (p.radius || 12) + "px";
+    }
+    applyAnimation(el, layer.animation || {});
+    stage.appendChild(el);
+  });
+}
+renderScene(document.getElementById("stage"), SCENE);
+</script>
+</body>
+</html>

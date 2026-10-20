@@ -1,0 +1,25 @@
+{
+  "theme": "light",
+  "chat": {
+    "api_key": "",
+    "base_url": "https://api.deepseek.com",
+    "model_id": "deepseek-chat"
+  },
+  "image": {
+    "api_key": "",
+    "base_url": "",
+    "model_id": ""
+  },
+  "last_output_dir": "",
+  "api_keys": {},
+  "endpoints": {},
+  "model_ids": {},
+  "runtime": {
+    "timeout": 60.0,
+    "max_retries": 3,
+    "allow_human_review": true,
+    "config_dir": ""
+  },
+  "prompts": {},
+  "last_project": ""
+}

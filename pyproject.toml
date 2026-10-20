@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "motionnest"
+version = "0.3.0"
+description = "MotionNest（动巢）：文档进、30 秒企业设备宣传片出 —— LLM 要点蒸馏 + 固定骨架分镜 + 逐帧渲染 + FFmpeg 编码"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "MotionNest Contributors" }]
+keywords = ["promo-video", "text-to-video", "storyboard", "llm", "ffmpeg", "motion-graphics"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "httpx>=0.27,<1.0",
+    "pydantic>=2.7,<3.0",
+    "PyYAML>=6.0,<7.0",
+    "typer>=0.12,<1.0",
+    "rich>=13.7,<14.0",
+    "python-dotenv>=1.0,<2.0",
+]
+
+[project.optional-dependencies]
+# 可选：本机无头浏览器截帧渲染（不装则降级为 HTML/清单输出）
+render = ["playwright>=1.40"]
+# 宣传片 CLI：真实出片需要 Playwright（浏览器可用系统 Edge/Chrome，见 MNEST_BROWSER_CHANNEL）
+promo = ["playwright>=1.40"]
+# 可选：桌面工具（DeepSeek 客户端风格 GUI，PySide6）
+desktop = ["PySide6>=6.6", "playwright>=1.40"]
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.6", "PySide6>=6.6", "pyinstaller>=6.0", "playwright>=1.40"]
+
+[project.scripts]
+mnest = "motionnest.cli:app"
+
+[tool.setuptools.packages.find]
+# motionnest 在 src/ 下，桌面端 desktop/ 在仓库根；两者都要进 wheel，
+# 否则 `pip install .` 后 `python -m desktop` 不可用（exe 走 PyInstaller spec）。
+where = ["src", "."]
+include = ["motionnest*", "desktop*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 130
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# typer 的 Option/Argument 作为默认值是框架惯用法
+"src/motionnest/cli.py" = ["B008"]
+# prompts.py 的“长行”是提示词模板内容（JSON 示例），拆分会改变提示词语义
+"src/motionnest/agents/prompts.py" = ["E501"]
+# 示例 pptx 构造器里的长行是 OOXML 模板内容（属性不能随意断行）
+"scripts/make_example_pptx.py" = ["E501"]

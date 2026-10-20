@@ -1,0 +1,31 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="moviepy" />
+          <option value="streamlit" />
+          <option value="streamlit-tour" />
+          <option value="edge_tts" />
+          <option value="fastapi" />
+          <option value="uvicorn" />
+          <option value="openai" />
+          <option value="faster-whisper" />
+          <option value="loguru" />
+          <option value="google-genai" />
+          <option value="dashscope" />
+          <option value="azure-cognitiveservices-speech" />
+          <option value="redis" />
+          <option value="python-multipart" />
+          <option value="pyyaml" />
+          <option value="requests" />
+          <option value="packaging" />
+          <option value="socksio" />
+          <option value="pydub" />
+          <option value="litellm" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

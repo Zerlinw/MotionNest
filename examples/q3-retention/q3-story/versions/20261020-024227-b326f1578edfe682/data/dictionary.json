@@ -1,0 +1,45 @@
+{
+  "columns": [
+    {
+      "name": "month",
+      "dtype": "date",
+      "unit": null,
+      "description": "统计月份（YYYY-MM）",
+      "required": true
+    },
+    {
+      "name": "new_users",
+      "dtype": "number",
+      "unit": "人",
+      "description": "当月新增注册用户数",
+      "required": true
+    },
+    {
+      "name": "activated_users",
+      "dtype": "number",
+      "unit": "人",
+      "description": "当月完成核心激活行为的用户数",
+      "required": true
+    },
+    {
+      "name": "retained_d30",
+      "dtype": "number",
+      "unit": "人",
+      "description": "当月新增中第 30 天仍活跃的用户数",
+      "required": true
+    },
+    {
+      "name": "revenue_cny",
+      "dtype": "number",
+      "unit": "元",
+      "description": "当月确认收入（人民币）",
+      "required": true
+    }
+  ],
+  "timezone": "Asia/Shanghai",
+  "source": "示例：内部增长看板导出（本文件为自造合成数据，仅用于演示）",
+  "metric_definitions": {
+    "activation_rate": "activated_users / new_users",
+    "d30_retention_rate": "retained_d30 / new_users"
+  }
+}

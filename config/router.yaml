@@ -1,0 +1,66 @@
+# ============================================================
+# MotionNest 任务路由规则（config/router.yaml）
+# ------------------------------------------------------------
+# 每个任务声明：
+#   preferred_tier  首选档位（low | strong）
+#   candidates      按优先级尝试的逻辑模型名（来自 models.yaml）
+#   fallback_tiers  首选候选全部不可用时，按档位顺序回退
+#   human_review    true = 该任务的产出必须人工签发；
+#                   且当所有候选模型都不可用时，转人工兜底而非报错中断
+#
+# 分工原则：
+#   高频、结构化、可 schema 校验的任务 → 低成本档（deepseek-flash）
+#   审美判断、复杂运镜、终审校对      → 强模型档 + 人工签发
+# ============================================================
+
+routes:
+  # ---------- 低成本档任务：全自动，靠 schema 校验 + 质量门禁把关 ----------
+  data_interpretation:
+    preferred_tier: low
+    candidates: [deepseek-flash]
+    fallback_tiers: []
+    human_review: false
+    description: 数据解读：字段理解、指标摘要、异常发现、叙事候选
+
+  storyboard_generation:
+    preferred_tier: low
+    candidates: [deepseek-flash]
+    fallback_tiers: [strong]
+    human_review: false
+    description: 分镜脚本：逐镜头时间码、数据断言、证据绑定
+
+  draft_animation:
+    preferred_tier: low
+    candidates: [deepseek-flash]
+    fallback_tiers: [strong]
+    human_review: false
+    description: 初稿动画生成：场景树、图层、动画原语
+
+  animation_revision:
+    preferred_tier: low
+    candidates: [deepseek-flash]
+    fallback_tiers: [strong]
+    human_review: false
+    description: 动画改稿：按评论定点修改图层属性
+
+  # ---------- 强模型档任务：默认强模型，缺失时低档出草案 + 人工签发 ----------
+  music_aesthetics:
+    preferred_tier: strong
+    candidates: [deepseek-v4-pro]
+    fallback_tiers: [low]
+    human_review: true
+    description: 配乐审美判断：模型无听觉，只规划节拍/能量/触发点，终审必须人工
+
+  camera_3d_design:
+    preferred_tier: strong
+    candidates: [deepseek-v4-pro]
+    fallback_tiers: [low]
+    human_review: true
+    description: 复杂三维运镜设计：简单运镜走确定性模板，复杂运镜才启用强模型
+
+  final_review:
+    preferred_tier: strong
+    candidates: [deepseek-v4-pro]
+    fallback_tiers: [low]
+    human_review: true
+    description: 最终成片校对建议：数字一致性、节奏、披露完整性
