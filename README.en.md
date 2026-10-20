@@ -7,10 +7,10 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
-  <img alt="Python >=3.10" src="https://img.shields.io/badge/Python-%3E%3D3.10-blue.svg">
-  <img alt="Tests" src="https://img.shields.io/badge/tests-55%20passed-brightgreen.svg">
-  <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg">
+  <a href="LICENSE">MIT License</a> ·
+  <a href="https://www.python.org/downloads/">Python 3.10+</a> ·
+  <a href="tests">pytest</a> ·
+  Windows / macOS / Linux
 </p>
 
 > Models propose. Deterministic programs compute. Humans approve.
@@ -320,7 +320,7 @@ No gate failure may auto-export a release build — gates emit actionable errors
 
 ```bash
 pip install -e ".[dev]"
-pytest                       # 55 tests: routing/wire protocol/agent contracts/gates/integration/desktop bridge
+pytest                       # full suite: routing/wire protocol/agent contracts/gates/integration/desktop bridge
 ruff check src tests         # lint
 ```
 

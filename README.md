@@ -1,16 +1,16 @@
 # MotionNest · 动巢
 
-[中文](README.md) · [English](README-en.md)
+[中文](README.md) · [English](README.en.md)
 
 <p align="center">
   <strong>把一张可信的数据表，变成可审片、可改稿、可导出成片的数据故事动画。</strong>
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
-  <img alt="Python >=3.10" src="https://img.shields.io/badge/Python-%3E%3D3.10-blue.svg">
-  <img alt="Tests" src="https://img.shields.io/badge/tests-106%20passed-brightgreen.svg">
-  <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg">
+  <a href="LICENSE">MIT License</a> ·
+  <a href="https://www.python.org/downloads/">Python 3.10+</a> ·
+  <a href="tests">pytest</a> ·
+  Windows / macOS / Linux
 </p>
 
 > 模型负责建议，确定性程序负责计算，人负责批准。
